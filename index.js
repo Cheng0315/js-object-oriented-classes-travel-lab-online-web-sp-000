@@ -25,5 +25,7 @@ class Route {
       'Madison Avenue',
       '5th Avenue'
     ];
+
+    let street = Math.abs(this.beginningLocation.vertical - this.endingLocation.verticle);
   }
 }
