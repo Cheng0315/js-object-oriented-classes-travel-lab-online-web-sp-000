@@ -27,6 +27,8 @@ class Route {
     ];
 
     let street = Math.abs(this.beginningLocation.vertical - this.endingLocation.verticle);
-    let ave = Math.abs(this.beginningLocation.horizontal - this.endingLocation.horizontal);
+    let ave = Math.abs(eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.horizontal));
+
+    return street + ave;
   }
 }
