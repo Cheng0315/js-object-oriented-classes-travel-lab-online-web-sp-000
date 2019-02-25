@@ -31,4 +31,8 @@ class Route {
 
     return street + ave;
   }
+
+  estimatedTime() {
+
+  }
 }
