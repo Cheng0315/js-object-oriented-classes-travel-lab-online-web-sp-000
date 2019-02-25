@@ -32,7 +32,11 @@ class Route {
     return street + ave;
   }
 
-  estimatedTime(hours) {
-
+  estimatedTime(peakHours) {
+    if (peakHours) {
+      return (this.blocksTravelled/2);
+    } else {
+      return (this.blocksTravelled/3);
+    }
   }
 }
